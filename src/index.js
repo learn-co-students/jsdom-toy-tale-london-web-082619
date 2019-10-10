@@ -1,3 +1,4 @@
+
 const addBtn = document.querySelector('#new-toy-btn');
 const toyForm = document.querySelector('.container');
 const toyFields = toyForm.querySelectorAll(".input-text")
