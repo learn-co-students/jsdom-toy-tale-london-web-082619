@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 6
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 11
+      "likes": 12
     },
     {
       "id": 3,
@@ -47,16 +47,6 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
-    },
-    {
-      "field.name": "https://www.thetoyshop.com/medias/539067-Primary-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wzMTI2OTJ8aW1hZ2UvcG5nfGltYWdlcy9oNzUvaGQ1LzkxNzAyMzMxOTY1NzQucG5nfDA3NGQzMTUzOWQxYzM0MWFhMDgxZWUyYzFjZjQ0NWU5NTY1ZTc1MmYwNGEwMzI5MzAzZjU4YWY1MzMzOGU4NWI",
-      "likes": 0,
-      "id": 9
-    },
-    {
-      "field.name": "http://www.femalesneakerfiend.com/img/inourwords/womenindustry/maria_adidas/toy.jpg",
-      "likes": 0,
-      "id": 10
     },
     {
       "name": "Thomas",
