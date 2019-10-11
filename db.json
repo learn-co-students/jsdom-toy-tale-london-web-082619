@@ -4,19 +4,19 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 6
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 9
     },
     {
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 4
     },
     {
       "id": 4,
@@ -47,6 +47,24 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Gabby Gabby",
+      "image": "https://66.media.tumblr.com/bf3577d33f14f07cedd8aced5fb6f291/tumblr_poos3rigDa1rlarwm_500.jpg",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Elizabeth",
+      "image": "https://66.media.tumblr.com/bf3577d33f14f07cedd8aced5fb6f291/tumblr_poos3rigDa1rlarwm_500.jpg",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "Sally",
+      "image": "https://vignette.wikia.nocookie.net/pixar/images/b/bc/GabbyGabbyFull.JPG/revision/latest?cb=20190623010945",
+      "likes": 2,
+      "id": 11
     }
   ]
 }
