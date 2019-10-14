@@ -15,13 +15,13 @@ function fetchGetToys(){
 
 //2 control for iteration
 function displyJsonToys(jsonToys){
-  for (toy of jsonToys) {
-    renderToys(toy);
+  for (const toy of jsonToys) {
+    renderToy(toy);
   } 
 };
 
 //3 render each item
-function renderToys(toy){
+function renderToy(toy){
     const  toyList = document.querySelector("#toy-collection") //格納先
     // debugger;
     const div = document.createElement("div");
@@ -36,7 +36,8 @@ function renderToys(toy){
     img.className = "toy-avatar" //これを入れていないとイメージが枠内に紐づかず、フォーマっとがぐちゃぐちゃになる！
     p.textContent = `${toy.likes} Likes`;
     button.className = "like-btn";
-    button.onclick = (event) => {addLike(event.target.parentElement)}; // got to ４ once triggered.このボタンエレメントでなくエレメント
+    button.innerText = "Like"
+    button.onclick = (event) => {addLike(event.target.parentElement)}; // onlcikのSyntax. to ４ once triggered.このボタンエレメントでなくエレメント
     //親であるDiv Elementがターゲットであることに注意
     div.append(h2,img,p,button); //divのなかに一旦子をひと塊りにして格納
     toyList.appendChild(div);//格納先に塊として格納
@@ -71,17 +72,23 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-toyForm.addEventListener('submit', (e) => {
-  debugger;
-  e.preventDefault();
-  const toy = {
-    name: e.target[0].value,
-    image: e.target[1].value,
-    likes: 0
-  }
+toyForm.addEventListener('submit', (event) => {
+  // debugger;
+  event.preventDefault();
+  addNewToy({
+    name: event.currentTarget.elements.name.value,
+    image: event.currentTarget.elements.image.value
+  });
+  event.target.//??
+
+  // const toy = {
+  //   name: e.target[0].value,
+  //   image: e.target[1].value,
+  //   likes: 0
+  // }
   fetchPostToy(toy) // データベースに書き込み
   .then(resp => resp.json())//その後画面に出力するためデータをデータベースより受け取り開始
-  .then(jsonToy => renderToys(jsonToy))//
+  .then(jsonToy => renderToy(jsonToy))//
 })
 
 function fetchPostToy(toy) {
