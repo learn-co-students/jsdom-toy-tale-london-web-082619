@@ -17,7 +17,7 @@ const postToy = function(newToy){ //newToyのパラメーター
 };
 
 const patchToy = function(toy){ //すでに存在するToy
-    return fetch(`${API_ENDPOINT}/toy.id`, {
+    return fetch(`${TOYS_URL}/${toy.id}`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/json",
@@ -29,3 +29,15 @@ const patchToy = function(toy){ //すでに存在するToy
 
 const API = {getToys, postToy, patchToy};
 
+
+// const arr1 = [0, 1, 2];
+// const arr2 = [...arr1, 3];
+
+// const obj1 = {
+//   name: "buzz",
+//   image: "buzz.png"
+// };
+// const ob2 = {
+//   ...obj1,
+//   likes: 0
+// };

@@ -48,10 +48,20 @@ const likeToy = function(toy, p){
   p.innerText = `${toy.likes} likes`;
   API.patchToy(toy);
 };
-  
+
 const addNewToy = function(newToy){
   API.postToy(newToy).then(toy => renderToy(toy));
 };
+
+toyForm.addEventListener("submit", function(event){
+  event.preventDefault();
+  addNewToy({
+    name: event.target.elements.name.value,
+    image: event.target.elements.image.value
+  });
+  // event.target.reset
+});
+
 
 //defaultで設定されていたやつ
 addBtn.addEventListener('click', () => {
