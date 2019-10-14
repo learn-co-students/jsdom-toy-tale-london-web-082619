@@ -59,7 +59,7 @@ toyForm.addEventListener("submit", function(event){
     name: event.target.elements.name.value,
     image: event.target.elements.image.value
   });
-  // event.target.reset
+  event.target.reset() 
 });
 
 
