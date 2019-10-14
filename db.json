@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 7
     },
     {
       "id": 2,
@@ -47,6 +47,42 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Forky",
+      "image": "https://media.very.co.uk/i/very/NJYDJ_SQ1_0000000088_NO_COLOR_SLf/toy-story-true-talkers-forky-figure.jpg?$266x354_standard$",
+      "likes": "0",
+      "id": 9
+    },
+    {
+      "name": "Ken",
+      "image": "https://vignette.wikia.nocookie.net/pixar/images/f/f7/63E4CDF2-2C21-4284-AA1F-E78A334DF7D8.jpeg/revision/latest?cb=20181207152430",
+      "likes": "0",
+      "id": 10
+    },
+    {
+      "name": "Forky",
+      "image": "https://media.very.co.uk/i/very/NJYDJ_SQ1_0000000088_NO_COLOR_SLf/toy-story-true-talkers-forky-figure.jpg?$266x354_standard$",
+      "likes": "0",
+      "id": 11
+    },
+    {
+      "name": "Forky",
+      "image": "https://media.very.co.uk/i/very/NJYDJ_SQ1_0000000088_NO_COLOR_SLf/toy-story-true-talkers-forky-figure.jpg?$266x354_standard$",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "name": "Forky",
+      "image": "https://media.very.co.uk/i/very/NJYDJ_SQ1_0000000088_NO_COLOR_SLf/toy-story-true-talkers-forky-figure.jpg?$266x354_standard$",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "name": "Forky",
+      "image": "https://media.very.co.uk/i/very/NJYDJ_SQ1_0000000088_NO_COLOR_SLf/toy-story-true-talkers-forky-figure.jpg?$266x354_standard$",
+      "likes": 0,
+      "id": 14
     }
   ]
 }
