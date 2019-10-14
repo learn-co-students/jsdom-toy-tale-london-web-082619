@@ -2,10 +2,9 @@ const addBtn = document.querySelector('#new-toy-btn')
 const toyForm = document.querySelector('.container')
 let addToy = false
 
-// YOUR CODE HERE
-
 const TOY_COLLECTION = document.getElementById(`toy-collection`);
-const TOYSURL = `http://localhost:3000/toys`;
+const API_ENDPOINT = 'http://localhost:3000';
+const TOYSURL = `${API_ENDPOINT}/toys`;
 
 let addToyForm = document.querySelector('.add-toy-form');
 
@@ -30,6 +29,7 @@ function renderToys(toys) {
 }
 
 function renderToy(toy) {
+
   // Create new toy container
   let newToyContainer = document.createElement(`div`);
   newToyContainer.className = `card`;
@@ -88,6 +88,8 @@ function createToy(event) {
   fetch(TOYSURL, configObject)
     .then(response => response.json())
     .then(toy => renderToy(toy))
+  
+  event.target.reset();
 }
 
 // UPDATE TOY - i.e. ADD A LIKE
@@ -105,8 +107,8 @@ function updateToy(event) {
 
   fetch(`${TOYSURL}` + `/${toyID}`, configObject)
   .then(response => response.json())
-  .then(getToys(TOYSURL))
 
+  event.target.parentElement.querySelector('p').innerText = `${toyLikes} likes`
 }
 
 
