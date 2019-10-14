@@ -1,5 +1,5 @@
-const API_ENDPOINT = "http://localhost:3000";//Newの時に必要
-const TOYS_URL = `${API_ENDPOINT}/toys`; //Patchの時に必要
+const API_ENDPOINT = "http://localhost:3000";//
+const TOYS_URL = `${API_ENDPOINT}/toys`; //Newの時
 
 const getToys = function(){
     return fetch(TOYS_URL).then(resp => resp.json());
