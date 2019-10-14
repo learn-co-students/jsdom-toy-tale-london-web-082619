@@ -19,8 +19,8 @@ function getToys(){ //index page
       <p><span id="no-of-likes">${toy.likes}</span> Likes</p>
       <button class="like-btn">Like</button>
       </div>`
-      // toy.addEventListener("click", clickLike());
     })
+    addButton();
   });
 }
 
@@ -62,21 +62,31 @@ addBtn.addEventListener('click', () => {
   }
 })
 
-    toyCollection.addEventListener('click', function(e){
-      let id = event.target.parentElement.dataset.id
-      let like = event.target.previousElementSibling
-      let likeCount = parseInt(event.target.previousElementSibling.innerText)
-      like.innerText = `${++likeCount} likes`
-      fetch(`http://localhost:3000/toys/${id}`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          likes: likeCount
-        })
-      })
-        .then(response => response.json())
-    }
-  )
-    
+
+// OR HERE!
+function addButton(){
+  const likeButton = document.querySelectorAll(".like-btn");
+  likeButton.forEach(like => {
+    like.addEventListener('click', clickLike);
+    })
+  }
+
+
+function clickLike(e){
+  let findSpanNum = e.target.previousElementSibling.querySelector("span")
+  let changeToInteger = Number.parseInt(findSpanNum.innerText)
+  changeToInteger++;
+  let toyID = e.target.parentNode.dataset.id 
+  fetch(`http://localhost:3000/toys/${toyID}`, {
+    method: 'PATCH',
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
+      likes: changeToInteger
+    })
+  }
+  ).then(resp => resp.json())
+  .then(json => findSpanNum.innerText = json.likes)
+}

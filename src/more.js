@@ -43,3 +43,65 @@
     //   }
     //   .then(resp => resp.json())
     // }
+
+
+
+     //   toyCollection.addEventListener('click', function(e){
+  //     let id = event.target.parentElement.dataset.id
+  //     let like = event.target.previousElementSibling
+  //     let likeCount = parseInt(event.target.previousElementSibling.innerText)
+  //     like.innerText = `${++likeCount} likes`
+  //     fetch(`http://localhost:3000/toys/${id}`, {
+  //       method: 'PATCH',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         likes: likeCount
+  //       })
+  //     })
+  //       .then(response => response.json())
+  //   }
+  // )
+
+
+
+
+
+
+    // likeButton[0].addEventListener("click", console.log("Hi"));
+
+//   likeButton.forEach(like => {
+//     like.addEventListener('click', function(e){
+//       console.log(e.target)})
+//    }) 
+
+//     likeButton.forEach(like => {
+//       like.addEventListener('click', clickLike());
+//     })
+
+//     function clickLike(e){
+//       e.preventDefault();
+//       console.log(hi)
+//     }
+//       e.preventDefault();
+//       let findSpan = e.target.previousElementSibling.querySelector('span');
+//       //finds the <span id = no'of likes'>5</span>
+//       let numLikes = findSpan.textContent; //gets '5'
+//       let changeToInteger = Number.parseInt(numLikes);
+//       let plusOne = changeToInteger++;
+//       numLikes = plusOne; //sets numLikes to new variable
+//       let toyID = like.parentNode.dataset.id //gets id num
+
+//       fetch("http://localhost:3000/toys/${toyID}"), {
+//         method: "PATCH",
+//         headers: {
+//           "Content-Type": "application/json",
+//           "Accept": "application/json"
+//         },
+//         body: JSON.stringify({
+//           likes: numLikes
+//         })
+//       }
+//       .then(resp => resp.json())
+//     }
