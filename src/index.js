@@ -54,6 +54,7 @@ const addNewToy = function(newToy){
 };
 
 toyForm.addEventListener("submit", function(event){
+  console.log("form submitted");
   event.preventDefault();
   addNewToy({
     name: event.target.elements.name.value,
