@@ -51,32 +51,26 @@
     {
       "name": "Takeshi",
       "image": "https://image.shutterstock.com/image-photo/red-apple-on-white-background-260nw-158989157.jpg",
-      "likes": 0,
+      "likes": 1,
       "id": 9
     },
     {
-      "name": "Estuko",
+      "name": "Takeshi2nd",
       "image": "https://image.shutterstock.com/image-photo/red-apple-on-white-background-260nw-158989157.jpg",
       "likes": 0,
       "id": 10
     },
     {
-      "name": "Test",
+      "name": "Tekshi#rd",
       "image": "https://image.shutterstock.com/image-photo/red-apple-on-white-background-260nw-158989157.jpg",
       "likes": 0,
       "id": 11
     },
     {
-      "name": "",
-      "image": "",
-      "likes": 0,
+      "name": "Takeshi4",
+      "image": "https://image.shutterstock.com/image-photo/red-apple-on-white-background-260nw-158989157.jpg",
+      "likes": 13,
       "id": 12
-    },
-    {
-      "name": "",
-      "image": "",
-      "likes": 0,
-      "id": 13
     }
   ]
 }
