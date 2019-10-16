@@ -10,11 +10,19 @@ API.getToys().then(toys => renderToys(toys));
   
 
 //2 control for iteration
-const renderToys = function(toys){
-  for (const toy of toys) {
-    renderToy(toy);
-  } 
-};
+// const renderToys = function(toys){
+//   for (const toy of toys) {
+//     renderToy(toy);
+//   } 
+// };
+ const renderToys = function(toys){
+   toys.forEach(toy => {
+     renderToy(toy)
+   })
+
+
+ }
+
 
 //3 render each item
 const renderToy = function(toy){
@@ -39,7 +47,6 @@ const renderToy = function(toy){
     //親であるDiv Elementがターゲットであることに注意
     div.append(h2,img,p,button); //divのなかに一旦子をひと塊りにして格納
     toyList.appendChild(div);//格納先に塊として格納
-    return div;//!!!return！！！
 };// 
 
 //4

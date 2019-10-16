@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 18
+      "likes": 21
     },
     {
       "id": 2,
@@ -65,6 +65,18 @@
       "image": "https://image.shutterstock.com/image-photo/red-apple-on-white-background-260nw-158989157.jpg",
       "likes": 0,
       "id": 11
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 13
     }
   ]
 }
