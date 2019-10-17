@@ -34,9 +34,17 @@ const renderToy = function(toy){
     likeToy(toy, p);
   });
 
-  div.append(h2,img,p,btn);
+  const btn2 = document.createElement("button");
+  btn2.className = "dislike-btn";
+  btn2.innerText = "Dislike";
+  btn2.addEventListener("click", function(e){
+    dislikeToy(toy,p);
+  });
+
+  div.append(h2,img,p,btn,btn2);
   toyList.appendChild(div);
 };
+
 //ここから再度確認
 //fron-tend to gather data through html
 toyForm.addEventListener("submit", function(e){
@@ -57,13 +65,38 @@ const addNewToy = function(newToy){
 
 //like. Optimistic
 const likeToy = function(toy, p){
-  //friont end
-  toy.likes++
-  p.innerText = `${toy.likes} Likes`
-  //back end
-  API.patchToy(toy)
+  
+  // //front end
+  // toy.likes++
+  // p.innerText = `${toy.likes} Likes`
+  // // back-end
+  // API.patchToy(toy)
+
+  //front end2
+  let likes = parseInt(p.innerText.split(" ")[0]);
+  likes++
+  p.innerText = `${likes} Likes`;
+  //back-end
+  const amendedToyObj = {
+    id: toy.id,
+    likes: likes
+  };
+  API.patchToy(amendedToyObj);
 };
 
+//optimistic
+const dislikeToy = function(toy,p){
+  //front-end
+  let likes = parseInt(p.innerText.split(" ")[0]);
+  likes--
+  p.innerText = `${likes} Likes`;
+  //back-end
+  const amendedToyObj = {
+    id: toy.id,
+    likes: likes
+  };
+  API.patchToy(amendedToyObj);
+}
 
 addBtn.addEventListener('click', () => {
   // hide & seek with the form
